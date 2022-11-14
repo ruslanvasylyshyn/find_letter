@@ -131,7 +131,9 @@ function App() {
               cleanMatrix();
             }
             showMatrix();
-            setTimeout(cleanMatrix(), 5000);
+            setTimeout(() => {
+              cleanMatrix();
+            }, 5000);
             setShowWinMessage(false);
           }}
           className="start_game"
